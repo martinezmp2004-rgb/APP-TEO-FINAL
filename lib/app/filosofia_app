@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import '../screens/pantalla_inicio.dart';
+
+class FilosofiaApp extends StatelessWidget {
+  const FilosofiaApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'final_teo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF4A148C),
+          brightness: Brightness.light,
+        ),
+        useMaterial3: true,
+        fontFamily: 'serif',
+      ),
+      home: const PantallaInicio(),
+    );
+  }
+}
